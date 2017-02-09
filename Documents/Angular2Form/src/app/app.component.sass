@@ -1,0 +1,98 @@
+.wrapper
+    height: 100vh
+    width: 100%
+    border: 1px solid red
+    background: linear-gradient(to left, #dd2476, #ff512f 110%)
+    font:
+        family: 'Roboto'
+
+.form-container
+    padding-top: 40px
+
+label
+    font:
+        weight: 300
+        size: 1.6em
+    position: absolute
+    top: 30%
+    transition: all .3s ease
+    &.getSmall
+        font:
+            size: 1em
+        top: 18%
+
+.inputBox
+    background-color: #fff
+    padding: 30px 20px 10px
+    position: relative
+    &.has-error
+        input
+            outline: none
+            border: none
+            box-shadow: none
+    border: 1px solid red
+
+input
+    margin: 0
+    padding: 0
+    border: none
+    box-shadow: none
+    outline: none
+    &:focus
+        outline: none
+        border: none
+        box-shadow: none
+
+button
+    border-radius: 0
+    border: none
+    padding: 10px 0
+    font:
+        weight: 600
+        size: 1.8em
+    height: auto
+    color: #ff512f
+    transition: all .3s ease
+    &[disabled]
+        opacity: .6
+
+
+input#message
+    background: none
+    border: none
+    border-bottom: 1px solid #4C4C4C
+    outline: none
+    box-shadow: none
+    font-size: 1.6em
+    font-weight: 300
+    margin-bottom: 3em
+    padding: 1.2em 0
+
+
+.chat-container
+    display: block
+    width: 100%
+
+.chat-container:nth-child(4)
+    opacity: .8
+
+.chat-container:nth-child(3)
+    opacity: .6
+
+.chat-container:nth-child(2)
+    opacity: .4
+
+
+.chat-container a
+    text-transform: uppercase
+    font-weight: bold
+    color: #816A98
+    font-size: .8em
+    letter-spacing: 2px
+
+
+.chat-container p
+    background: #323035
+    padding: 1.1em
+    color: white
+    margin: 5px 0 10px 0

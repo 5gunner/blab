@@ -1,0 +1,61 @@
+@import "../../shared/_vars"
+
+.wrapper-container
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    @media screen and (max-width: 768px)
+        padding: 0 25px
+
+i
+    margin-bottom: 46px
+
+ul
+    display: flex
+    flex-direction: column
+    height: 60%
+    width: 100%
+    @media screen and (max-height: 550px)
+        height: 70%
+    li
+        padding: 15px 0 0
+    li:first-child
+        button
+            background-color: $fBlue
+            color: #fff
+            background-image: url('../../assets/images/facebook.svg')
+            background-position-x: 37px
+    li:nth-child(2)
+        button
+            background-color: #fff
+            color: $dark
+            background-image: url('../../assets/images/google.svg')
+            background-position-x: 27px
+    li:nth-child(3)
+        button
+            background-color: darken($oWhite, 2)
+            color: lighten($dark, 10)
+            background-image: url('../../assets/images/mail.svg')
+            background-position-x: 22px
+    li:nth-child(4)
+        flex-grow: 1
+
+
+button
+    background-position-y: center
+    background-repeat: no-repeat
+    background-size: auto 60%
+    width: 100%
+    border: none
+    border-radius: 5px
+    font-size: 1.2rem
+    text-transform: capitalize
+    padding: 15px 0
+    display: block
+    line-height: 1.5
+    &:focus
+        border: none
+        box-shadow: none
+        outline: 0
