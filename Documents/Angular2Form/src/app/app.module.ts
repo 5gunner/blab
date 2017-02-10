@@ -8,17 +8,22 @@ import { HttpModule } from '@angular/http';
 import { firebaseConfig } from './angularFire.config';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewComponent
+    OverviewComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    MaterialModule.forRoot(),
     AppRoutes
   ],
   providers: [RouteGuardService],
